@@ -30,7 +30,7 @@ usage() {
 # Default values. May be overridden by command line options.
 UPSTREAM_REMOTE="upstream"
 ORIGIN_REMOTE="origin"
-BRANCH=0
+BRANCH="NOT SET"
 TO_RETURN_BRANCH=0
 PUSH=0
 
@@ -79,7 +79,7 @@ fi
 # the current branch.
 
 # If no branch was specified, use the current branch.
-if [ "${BRANCH}" -eq 0 ]; then
+if [ "${BRANCH}" == "NOT SET" ]; then
     BRANCH="$(git rev-parse --abbrev-ref HEAD)"
     TO_RETURN_BRANCH="${BRANCH}"
 fi

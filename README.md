@@ -57,7 +57,7 @@ When complete, you should be able to execute `git-upstream-merge` from anywhere 
 A message on usage will be displayed if you run `git-upstream-merge -h`. The following will be returned:
 
 ```txt
-./git-upstream-merge.sh is a tool to to update a branch on a local clone of a
+git-upstream-merge.sh is a tool to to update a branch on a local clone of a
 forked git repository with its upstream. E.g., upstream A is forked
 to origin B, and cloned locally to C. When working on branch X in
 local repo C this tool may be used to merge branch X from upstream 

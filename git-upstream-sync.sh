@@ -68,12 +68,6 @@ if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
     exit 1
 fi
 
- # Ensure the current branch is not detached.
-if git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
-    echo "The current branch is detached."
-    exit 1
-fi
-
 # Ensure the current branch is clean.
 if ! git diff-index --quiet HEAD --; then
     echo "The current branch has uncommitted changes."

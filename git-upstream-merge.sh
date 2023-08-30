@@ -11,7 +11,7 @@ usage() {
     echo "Options exist to both pull from origin B prior to this operation "
     echo "and push to origin B after."
     echo
-    echo "Usage: $0 [-l] [-p] [-o] [-u]"
+    echo "Usage: $0 [-l] [-p] [-o] [-u] [-h]"
     echo "-l         : Update branch with a pull from origin before the "
     echo "             upstream merge."
     echo "-p         : Push the merged changes to the remote "origin""

@@ -66,7 +66,7 @@ A.
 Options exist to both pull from origin B prior to this operation 
 and push to origin B after.
 
-Usage: ./git-upstream-merge.sh [-l] [-p] [-o] [-u]
+Usage: ./git-upstream-merge.sh [-l] [-p] [-o] [-u] [-h]
 -l         : Update branch with a pull from origin before the 
              upstream merge.
 -p         : Push the merged changes to the remote origin

@@ -8,7 +8,7 @@ if [ $EUID != 0 ]; then
 fi
 
 # Install git-upstream-sync.sh to /usr/local/bin/git-upstream-sync.
-install -m 755 git-upstream-sync.sh /usr/local/bin 
+install -m 755 git-upstream-sync.sh /usr/local/bin/git-upstream-sync
 status=$?
 
 # If success.

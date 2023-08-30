@@ -112,7 +112,7 @@ fi
 
 # Merge the upstream branch into the current branch.
 git merge --ff-only "${UPSTREAM_REMOTE}/${BRANCH}"
-if $? -ne 0; then
+if [ $? -ne 0 ]; then
     echo "Failed to FF merge upstream into '${BRANCH}'."
     echo "This may be due to merge conflicts. To resolve these:"
     echo "'git switch ${BRANCH} && git merge ${UPSTREAM_REMOTE}/${BRANCH}'"
@@ -125,7 +125,7 @@ fi
 # Push the merged changes to the origin remote if requested.
 if [ "${PUSH}" -eq 1 ]; then
     git push "${ORIGIN_REMOTE}" "${BRANCH}"
-    if $? -ne 0; then
+    if [ $? -ne 0 ]; then
         echo "Failed to push '${BRANCH}' to origin."
         git switch -q "${TO_RETURN_BRANCH}"
         exit 1

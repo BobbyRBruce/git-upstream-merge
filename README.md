@@ -77,7 +77,7 @@ Usage: ./git-upstream-sync.sh [-b] [-l] [-p] [-o] [-u] [-h]
 -h         : Display this help message explaining usage.
 
 Note: This tool only supports fast-forward merges. From upstream to
-local and from origin to local.
+local and from local to origin.
 ```
 
 ### Working on a feature branch

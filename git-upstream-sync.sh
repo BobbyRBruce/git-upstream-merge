@@ -35,7 +35,7 @@ TO_RETURN_BRANCH=0
 PUSH=0
 
 # Parse the command line options.
-while getopts "b:p:o:u:h" opt; do
+while getopts "b:po:u:h" opt; do
     case "${opt}" in
         b)
             BRANCH="${OPTARG}"
@@ -104,8 +104,8 @@ fi
 # Ensure the BRANCH exists in the local repository.
 # If it doesn't create it and check it out.
 # If it does exist, check it out.
-if ! git branch | grep -q "^ *${BRANCH}$"; then
-    git switch -q -c "${BRANCH}"
+if ! git branch | grep -q "^.* ${BRANCH}$"; then
+   git switch -q -c "${BRANCH}"
 else
     git switch -q "${BRANCH}"
 fi

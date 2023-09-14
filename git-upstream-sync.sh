@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+# Copyright (c) 2023 Bobby R. Bruce
 # SPDX-License-Identifier: MIT
 
 usage() { 
